@@ -22,7 +22,7 @@ class CreateSongsTable extends Migration
             $table -> string('genre');
             $table -> string('length', 30);
             $table -> string('album');
-            $table -> text('text');
+            $table -> text('text') -> nullable();
             $table -> tinyInteger('vote');
         });
     }
